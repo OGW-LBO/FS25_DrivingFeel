@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--
+    Eigener Unter-Tab in ESC -> Allgemeine Einstellungen. Die Profile sind
+    Basisspiel-Profile und muessen exakt so heissen.
+
+    Die Prefabs sind nur Klonvorlagen: nach dem Laden ausgeblendet, fuer jede
+    Zeile geklont, danach geloescht.
+-->
+<GUI>
+    <GuiElement profile="fs25_menuContainer">
+        <BoxLayout profile="fs25_subCategorySelectorTabbedBox">
+            <Button profile="fs25_subCategorySelectorTabbedTab" id="fgTab"
+                    text="$l10n_fg_tabTitle" onClick="onClickFgTab">
+                <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+            </Button>
+        </BoxLayout>
+        <GuiElement profile="fs25_subCategorySelectorTabbedContainer" id="fgPage">
+            <ScrollingLayout profile="fs25_settingsLayout" id="fgLayout">
+                <!-- Abschnitts-Ueberschrift -->
+                <Text profile="fs25_settingsSectionHeader" id="fgSectionPrefab"/>
+                <!-- Einstellungszeile: MultiTextOption mit frei gesetzter Werteliste -->
+                <Bitmap profile="fs25_multiTextOptionContainer" id="fgRowPrefab">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" id="fgRowOptPrefab">
+                        <Text profile="fs25_multiTextOptionTooltip" name="ignore"/>
+                    </MultiTextOption>
+                    <Text profile="fs25_settingsMultiTextOptionTitle"/>
+                </Bitmap>
+            </ScrollingLayout>
+            <Bitmap profile="fs25_settingsTooltipSeparator"/>
+        </GuiElement>
+    </GuiElement>
+</GUI>

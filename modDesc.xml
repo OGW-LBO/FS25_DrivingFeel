@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="115" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>OGW</author>
+    <version>1.3.0.0</version>
+
+    <title>
+        <en>Driving Feel</en>
+        <de>Fahr-Gefühl</de>
+        <fr>Sensation De Conduite</fr>
+    </title>
+
+    <description>
+        <en><![CDATA[In Farming Simulator every vehicle drives as if it were on rails. This mod takes some of that away.
+
+It does not replace any vehicle values. Instead it applies factors to the tyre and suspension values each vehicle already brings along, so a 90 hp tractor still feels different from a big one. And because it works on the wheels rather than on the vehicle files, it reaches the base game vehicles as well, which you otherwise cannot touch.
+
+There are sliders for cornering grip (the tyres push to the side earlier in bends and on slopes), traction (the wheels spin earlier under load), friction (grip on every surface), brake force, and spring rate and damping. Tractors and trailers are kept apart, because too little cornering grip on a trailer makes it sway behind the tractor - trailers are therefore left at stock out of the box.
+
+If you would rather not touch every single slider, take one of the four presets: Stock, Gentle, Noticeable or True to life. Stock means every vehicle drives exactly as it would without the mod. True to life is not a matter of taste but worked out: the game's vehicles ride at about 3.15 Hz on average, while a suspended tractor front axle sits at 2.0 to 2.5 Hz in reality.
+
+You will find all of it under ESC - General Settings - Driving Feel. A value takes effect right away, including on vehicles already standing out in the world. In multiplayer the values belong to the server and only an admin sets them, but on top of that every player can switch on their own values, which then only apply to the vehicles that player is sitting in.
+
+Since 1.2.0.0 the load counts: spring rate and damping each have a value for empty and one for fully loaded, and in between they are mixed by the load every wheel actually carries. A spring is built for its rated load and is therefore too firm when empty - that is exactly what this reproduces. Cab, seat and driver are held firmer out of the box so the view in the cab stands calmer, and accelerator and brake can be made lazier so a heavy machine feels like one.
+
+There is one more thing for multiplayer. Wheel physics runs on the server alone, and a client only ever receives a capped and smoothed wheel speed, so spinning wheels barely show. The mod sends the slip along from the server, so dust, dirt and the wheels themselves look like they do in single player. The switch sits under Multiplayer and is hidden in single player.
+
+Console: fgStatus, fgSet, fgReload
+
+Script mod, so PC and Mac only.]]></en>
+        <de><![CDATA[Im Landwirtschafts-Simulator fährt jedes Fahrzeug wie auf Schienen. Diese Mod nimmt das ein Stück zurück.
+
+Sie ersetzt keine Fahrzeugwerte, sondern rechnet Faktoren auf die Reifen- und Federungswerte, die jedes Fahrzeug selbst mitbringt. Ein 90-PS-Traktor fühlt sich also weiterhin anders an als ein Großschlepper. Und weil die Mod an den Rädern ansetzt und nicht an den Fahrzeugdateien, erreicht sie auch die Fahrzeuge des Basisspiels, an die man sonst nicht herankommt.
+
+Regler gibt es für Seitenführung (die Reifen schieben in der Kurve und am Hang früher zur Seite), Antrieb (die Räder drehen unter Last früher durch), Reibung (der Grip auf jedem Untergrund), Bremskraft sowie Federhärte und Dämpfung. Zugfahrzeuge und Anhänger sind dabei getrennt, denn zu wenig Seitenführung am Hänger lässt ihn hinter dem Traktor pendeln - ab Werk stehen die Anhänger deshalb auf Serie.
+
+Wer nicht jeden einzelnen Regler anfassen will, nimmt eine der vier Voreinstellungen: Serie, Sanft, Deutlich oder Realistisch. Serie heißt, jedes Fahrzeug fährt genau wie ohne die Mod. Realistisch ist dabei keine Geschmacksfrage, sondern gerechnet: die Fahrzeuge des Spiels federn im Mittel mit 3,15 Hz, eine gefederte Traktor-Vorderachse liegt in Wirklichkeit bei 2,0 bis 2,5 Hz.
+
+Zu finden ist alles unter ESC - Allgemeine Einstellungen - Fahr-Gefühl. Ein Wert wirkt sofort, auch auf Fahrzeuge, die schon draußen stehen. Im Mehrspieler gehören die Werte dem Server und nur ein Admin stellt sie, zusätzlich kann aber jeder Spieler eigene Werte einschalten, die dann nur für die Fahrzeuge gelten, in denen er selbst sitzt.
+
+Seit 1.2.0.0 zählt die Last mit: Federhärte und Dämpfung haben je einen Wert für leer und einen für voll beladen, dazwischen wird nach der Last gemischt, die jedes Rad gerade trägt. Eine Feder ist für ihre Nennlast gebaut und leer deshalb zu hart - genau das lässt sich damit nachstellen. Kabine, Sitz und Fahrerfigur werden ab Werk straffer gehalten, damit das Bild in der Innenansicht ruhiger steht, und Gas und Bremse lassen sich träger stellen, damit eine schwere Maschine sich auch so anfühlt.
+
+Für den Mehrspieler kommt noch eine Sache dazu. Dort rechnet die Radphysik allein der Server, ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet - durchdrehende Räder fallen deshalb kaum auf. Die Mod schickt den Schlupf vom Server nach, damit Staub, Dreck und Radbild wieder so aussehen wie im Einzelspieler. Der Schalter steht unter Mehrspieler und ist im Einzelspieler ausgeblendet.
+
+Konsole: fgStatus, fgSet, fgReload
+
+Skript-Mod, läuft daher nur auf PC und Mac.]]></de>
+        <fr><![CDATA[Dans Farming Simulator, chaque véhicule roule comme sur des rails. Ce mod en reprend une partie.
+
+Il ne remplace aucune valeur de véhicule : il applique des facteurs aux valeurs de pneus et de suspension que chaque véhicule possède déjà. Un tracteur de 90 ch reste donc différent d'un gros tracteur. Et comme le mod agit sur les roues et non sur les fichiers de véhicule, il atteint aussi les véhicules du jeu de base, autrement inaccessibles.
+
+Des curseurs existent pour l'adhérence latérale (les pneus glissent plus tôt en virage et en pente), la motricité (les roues patinent plus tôt en charge), la friction (l'adhérence sur tous les sols), la force de freinage, ainsi que la raideur et l'amortissement. Tracteurs et remorques sont séparés, car une adhérence latérale trop faible fait louvoyer la remorque derrière le tracteur - par défaut, les remorques restent donc à l'origine.
+
+Si vous préférez ne pas toucher à chaque curseur, prenez l'un des quatre préréglages : Origine, Léger, Marqué ou Réaliste. Origine signifie que chaque véhicule roule exactement comme sans le mod. Réaliste n'est pas affaire de goût mais de calcul : les véhicules du jeu oscillent en moyenne à 3,15 Hz, alors qu'un essieu avant suspendu de tracteur se situe en réalité entre 2,0 et 2,5 Hz.
+
+Tout se trouve sous ÉCHAP - Réglages généraux - Sensation De Conduite. Une valeur agit aussitôt, y compris sur les véhicules déjà présents. En multijoueur, les valeurs appartiennent au serveur et seul un administrateur les règle, mais chaque joueur peut en plus activer ses propres valeurs, qui ne s'appliquent alors qu'aux véhicules qu'il conduit lui-même.
+
+Depuis la 1.2.0.0, la charge compte : la raideur et l'amortissement ont chacun une valeur à vide et une en charge complète, mélangées selon la charge que porte réellement chaque roue. Un ressort est conçu pour sa charge nominale et reste donc trop ferme à vide - c'est exactement ce que cela reproduit. La cabine, le siège et le conducteur sont tenus plus fermement d'origine pour que l'image dans la cabine reste plus calme, et l'accélérateur et le frein peuvent être rendus plus lents pour qu'une machine lourde en ait l'air.
+
+Une chose de plus pour le multijoueur. La physique des roues tourne uniquement sur le serveur et un client ne reçoit qu'une vitesse de roue plafonnée et lissée - le patinage se remarque donc à peine. Le mod transmet le patinage depuis le serveur, pour que la poussière, la boue et les roues retrouvent l'aspect du solo. L'interrupteur se trouve sous Multijoueur et reste masqué en solo.
+
+Console : fgStatus, fgSet, fgReload
+
+Mod de script, donc PC et Mac uniquement.]]></fr>
+    </description>
+
+    <iconFilename>icon_DrivingFeel.dds</iconFilename>
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="FahrGefuehl.lua"/>
+        <sourceFile filename="FGSettings.lua"/>
+        <sourceFile filename="FGSettingsEvent.lua"/>
+        <sourceFile filename="FGPlayerEvent.lua"/>
+        <sourceFile filename="FGSlip.lua"/>
+        <sourceFile filename="FGSlipEvent.lua"/>
+        <sourceFile filename="FGKabine.lua"/>
+        <sourceFile filename="FGPedal.lua"/>
+        <sourceFile filename="FGSettingsPage.lua"/>
+        <sourceFile filename="FGUIHelper.lua"/>
+        <sourceFile filename="FGMenuPage.lua"/>
+        <sourceFile filename="FGMod.lua"/>
+    </extraSourceFiles>
+
+    <l10n>
+        <text name="fg_tabTitle">
+            <en>Driving Feel</en>
+            <de>Fahr-Gefühl</de>
+            <fr>Sensation De Conduite</fr>
+        </text>
+
+        <text name="fg_sec_allgemein">
+            <en>General</en>
+            <de>Allgemein</de>
+            <fr>Général</fr>
+        </text>
+        <text name="fg_sec_zug">
+            <en>Tractors and self-propelled machines</en>
+            <de>Zugfahrzeuge und selbstfahrende Maschinen</de>
+            <fr>Tracteurs et automotrices</fr>
+        </text>
+        <text name="fg_sec_anhaenger">
+            <en>Trailers and implements</en>
+            <de>Anhänger und Geräte</de>
+            <fr>Remorques et outils</fr>
+        </text>
+        <text name="fg_sec_federung">
+            <en>Suspension (all vehicles)</en>
+            <de>Federung (alle Fahrzeuge)</de>
+            <fr>Suspension (tous les véhicules)</fr>
+        </text>
+        <text name="fg_sec_eigen">
+            <en>My own setting (multiplayer)</en>
+            <de>Meine Einstellung (Mehrspieler)</de>
+            <fr>Mon réglage (multijoueur)</fr>
+        </text>
+        <text name="fg_sec_eigen_zug">
+            <en>Mine: tractors and self-propelled machines</en>
+            <de>Meine: Zugfahrzeuge und selbstfahrende Maschinen</de>
+            <fr>Les miens : tracteurs et automotrices</fr>
+        </text>
+        <text name="fg_sec_eigen_anhaenger">
+            <en>Mine: trailers and implements</en>
+            <de>Meine: Anhänger und Geräte</de>
+            <fr>Les miens : remorques et outils</fr>
+        </text>
+        <text name="fg_sec_eigen_federung">
+            <en>Mine: suspension</en>
+            <de>Meine: Federung</de>
+            <fr>Les miens : suspension</fr>
+        </text>
+        <text name="fg_ui_eigenAktiv">
+            <en>Use my own values</en>
+            <de>Meine Werte verwenden</de>
+            <fr>Utiliser mes valeurs</fr>
+        </text>
+        <text name="fg_ui_eigenAktiv_t">
+            <en>Off means you drive with the server default like everyone else.</en>
+            <de>Aus heißt, du fährst mit der Server-Vorgabe wie alle anderen.</de>
+            <fr>Désactivé signifie que vous roulez avec le réglage du serveur comme tout le monde.</fr>
+        </text>
+        <text name="fg_ui_voreinstellungEigen_t">
+            <en>Sets your own sliders below at once. Stock means you drive as without the mod.</en>
+            <de>Setzt deine eigenen Regler darunter auf einmal. Serie heißt, du fährst wie ohne die Mod.</de>
+            <fr>Règle d'un coup vos propres curseurs ci-dessous. Origine signifie que vous roulez comme sans le mod.</fr>
+        </text>
+
+        <text name="fg_sec_mp">
+            <en>Multiplayer</en>
+            <de>Mehrspieler</de>
+            <fr>Multijoueur</fr>
+        </text>
+        <text name="fg_ui_mpSchlupf">
+            <en>Send wheel slip</en>
+            <de>Radschlupf übertragen</de>
+            <fr>Transmettre le patinage</fr>
+        </text>
+        <text name="fg_ui_mpSchlupf_t">
+            <en>Without it, other players barely see the wheels spin. The server sends a few values per second for it.</en>
+            <de>Ohne das sehen Mitspieler kaum, wenn Räder durchdrehen. Der Server schickt dafür ein paar Werte je Sekunde.</de>
+            <fr>Sans cela, les autres joueurs voient à peine les roues patiner. Le serveur envoie quelques valeurs par seconde.</fr>
+        </text>
+
+        <text name="fg_sec_meldungen">
+            <en>Messages</en>
+            <de>Meldungen</de>
+            <fr>Messages</fr>
+        </text>
+
+        <text name="fg_ui_aktiv">
+            <en>Driving feel active</en>
+            <de>Fahr-Gefühl aktiv</de>
+            <fr>Sensation de conduite active</fr>
+        </text>
+        <text name="fg_ui_aktiv_t">
+            <en>Off restores the original values of every vehicle immediately.</en>
+            <de>Aus stellt sofort die Originalwerte jedes Fahrzeugs wieder her.</de>
+            <fr>Désactivé rétablit aussitôt les valeurs d'origine de chaque véhicule.</fr>
+        </text>
+
+        <text name="fg_ui_voreinstellung">
+            <en>Preset</en>
+            <de>Voreinstellung</de>
+            <fr>Préréglage</fr>
+        </text>
+        <text name="fg_ui_voreinstellung_t">
+            <en>Sets every slider below at once. Stock means the mod does nothing.</en>
+            <de>Setzt alle Regler darunter auf einmal. Serie heißt, die Mod tut nichts.</de>
+            <fr>Règle d'un coup tous les curseurs ci-dessous. Origine signifie que le mod n'agit pas.</fr>
+        </text>
+        <text name="fg_opt_eigene">
+            <en>Custom</en>
+            <de>Eigene</de>
+            <fr>Personnalisé</fr>
+        </text>
+        <text name="fg_opt_serie">
+            <en>Stock</en>
+            <de>Serie</de>
+            <fr>Origine</fr>
+        </text>
+        <text name="fg_opt_sanft">
+            <en>Gentle</en>
+            <de>Sanft</de>
+            <fr>Léger</fr>
+        </text>
+        <text name="fg_opt_deutlich">
+            <en>Noticeable</en>
+            <de>Deutlich</de>
+            <fr>Marqué</fr>
+        </text>
+        <text name="fg_opt_realistisch">
+            <en>True to life</en>
+            <de>Realistisch</de>
+            <fr>Réaliste</fr>
+        </text>
+
+        <text name="fg_ui_seite">
+            <en>Cornering grip</en>
+            <de>Seitenführung</de>
+            <fr>Adhérence latérale</fr>
+        </text>
+        <text name="fg_ui_seite_t">
+            <en>Below 1.00 the tractor pushes to the side earlier in bends and on slopes.</en>
+            <de>Unter 1,00 schiebt der Traktor in der Kurve und am Hang früher zur Seite.</de>
+            <fr>En dessous de 1,00, le tracteur glisse plus tôt en virage et en pente.</fr>
+        </text>
+        <text name="fg_ui_seiteA_t">
+            <en>Careful: too little grip here makes trailers sway behind the tractor.</en>
+            <de>Vorsicht: zu wenig Grip lässt Anhänger hinter dem Traktor pendeln.</de>
+            <fr>Attention : trop peu d'adhérence fait louvoyer les remorques.</fr>
+        </text>
+
+        <text name="fg_ui_antrieb">
+            <en>Traction</en>
+            <de>Antrieb</de>
+            <fr>Motricité</fr>
+        </text>
+        <text name="fg_ui_antrieb_t">
+            <en>Below 1.00 the wheels spin earlier under load, for example on a cultivator.</en>
+            <de>Unter 1,00 drehen die Räder unter Last früher durch, etwa am Grubber.</de>
+            <fr>En dessous de 1,00, les roues patinent plus tôt en charge, par exemple au cultivateur.</fr>
+        </text>
+        <text name="fg_ui_antriebA_t">
+            <en>Affects how a trailer rolls and how it follows under braking.</en>
+            <de>Wirkt darauf, wie ein Anhänger rollt und beim Bremsen folgt.</de>
+            <fr>Agit sur la façon dont une remorque roule et suit au freinage.</fr>
+        </text>
+
+        <text name="fg_ui_reibung">
+            <en>Friction</en>
+            <de>Reibung</de>
+            <fr>Friction</fr>
+        </text>
+        <text name="fg_ui_reibung_t">
+            <en>Overall grip on every surface, including field, mud and snow.</en>
+            <de>Der Grip insgesamt, auf jedem Untergrund, auch Feld, Matsch und Schnee.</de>
+            <fr>L'adhérence globale sur tous les sols, y compris champ, boue et neige.</fr>
+        </text>
+        <text name="fg_ui_reibungA_t">
+            <en>Lower values let a loaded trailer slide earlier on wet ground.</en>
+            <de>Kleinere Werte lassen einen beladenen Anhänger auf nassem Boden früher rutschen.</de>
+            <fr>Des valeurs plus faibles font glisser plus tôt une remorque chargée sur sol humide.</fr>
+        </text>
+
+        <text name="fg_ui_bremse">
+            <en>Brake force</en>
+            <de>Bremskraft</de>
+            <fr>Force de freinage</fr>
+        </text>
+        <text name="fg_ui_bremse_t">
+            <en>Factor on the brake force of this vehicle.</en>
+            <de>Faktor auf die Bremskraft dieses Fahrzeugs.</de>
+            <fr>Facteur sur la force de freinage de ce véhicule.</fr>
+        </text>
+        <text name="fg_ui_bremseA_t">
+            <en>Raise this if trailers push or drift away while parked.</en>
+            <de>Höher stellen, wenn Anhänger schieben oder im Stand wandern.</de>
+            <fr>À augmenter si les remorques poussent ou dérivent à l'arrêt.</fr>
+        </text>
+
+        <text name="fg_ui_feder">
+            <en>Spring rate (empty)</en>
+            <de>Federhärte (leer)</de>
+            <fr>Raideur de ressort (à vide)</fr>
+        </text>
+        <text name="fg_ui_feder_t">
+            <en>Below 1.00 the vehicle leans and dips more visibly. Applies while it is empty.</en>
+            <de>Unter 1,00 neigt und taucht das Fahrzeug sichtbarer. Gilt, solange es leer ist.</de>
+            <fr>En dessous de 1,00, le véhicule s'incline et plonge plus visiblement. Vaut à vide.</fr>
+        </text>
+        <text name="fg_ui_federVoll">
+            <en>Spring rate (loaded)</en>
+            <de>Federhärte (voll)</de>
+            <fr>Raideur de ressort (chargé)</fr>
+        </text>
+        <text name="fg_ui_federVoll_t">
+            <en>Applies at twice the tyre's rated load. Above the empty value the suspension firms up as the load grows, the way it does in reality.</en>
+            <de>Gilt bei doppelter Nennlast des Reifens. Über dem Leerwert wird die Federung mit der Last härter, so wie in Wirklichkeit.</de>
+            <fr>Vaut au double de la charge nominale du pneu. Au-dessus de la valeur à vide, la suspension se raidit avec la charge, comme dans la réalité.</fr>
+        </text>
+        <text name="fg_ui_daempfung">
+            <en>Damping (empty)</en>
+            <de>Dämpfung (leer)</de>
+            <fr>Amortissement (à vide)</fr>
+        </text>
+        <text name="fg_ui_daempfung_t">
+            <en>Below 1.00 the body keeps moving longer after a bump.</en>
+            <de>Unter 1,00 schwingt der Aufbau nach einer Bodenwelle länger nach.</de>
+            <fr>En dessous de 1,00, la caisse oscille plus longtemps après une bosse.</fr>
+        </text>
+        <text name="fg_ui_daempfungVoll">
+            <en>Damping (loaded)</en>
+            <de>Dämpfung (voll)</de>
+            <fr>Amortissement (chargé)</fr>
+        </text>
+        <text name="fg_ui_daempfungVoll_t">
+            <en>A loaded vehicle needs more damping, otherwise the mass keeps swinging.</en>
+            <de>Beladen braucht es mehr Dämpfung, sonst schwingt die Masse nach.</de>
+            <fr>Chargé, il faut plus d'amortissement, sinon la masse continue d'osciller.</fr>
+        </text>
+
+        <text name="fg_sec_kabine">
+            <en>Cab and seat</en>
+            <de>Kabine und Sitz</de>
+            <fr>Cabine et siège</fr>
+        </text>
+        <text name="fg_sec_eigen_kabine">
+            <en>Mine: cab and seat</en>
+            <de>Meine: Kabine und Sitz</de>
+            <fr>Les miens : cabine et siège</fr>
+        </text>
+        <text name="fg_ui_kabineAktiv">
+            <en>Cab suspension</en>
+            <de>Kabinenfederung</de>
+            <fr>Suspension de cabine</fr>
+        </text>
+        <text name="fg_ui_kabineAktiv_t">
+            <en>On calms the view in the cab: the values below hold cab, seat and driver firmer than stock. Off lets all three move exactly as they do without the mod.</en>
+            <de>An beruhigt das Bild in der Kabine: die Werte darunter halten Kabine, Sitz und Fahrer straffer als Serie. Aus lässt alle drei genau so federn wie ohne die Mod.</de>
+            <fr>Activé calme l'image dans la cabine : les valeurs ci-dessous tiennent la cabine, le siège et le conducteur plus fermement qu'à l'origine. Désactivé, les trois bougent comme sans le mod.</fr>
+        </text>
+        <text name="fg_ui_kabineWeg">
+            <en>Range of movement</en>
+            <de>Bewegungsumfang</de>
+            <fr>Amplitude du mouvement</fr>
+        </text>
+        <text name="fg_ui_kabineWeg_t">
+            <en>Below 1.00 cab and seat travel a shorter way and take less of each jolt - that is what calms the view. Above 1.20 the cab can visibly wander out of its mounting.</en>
+            <de>Unter 1,00 schlagen Kabine und Sitz kürzer aus und nehmen weniger von jedem Stoß an - das beruhigt das Bild. Über 1,20 kann die Kabine sichtbar aus ihrer Aufhängung wandern.</de>
+            <fr>En dessous de 1,00, la cabine et le siège se déplacent moins loin et encaissent moins chaque choc - c'est ce qui calme l'image. Au-delà de 1,20, la cabine peut sortir visiblement de son support.</fr>
+        </text>
+        <text name="fg_ui_kabineFeder">
+            <en>Cab spring rate</en>
+            <de>Federhärte der Kabine</de>
+            <fr>Raideur de la cabine</fr>
+        </text>
+        <text name="fg_ui_kabineFeder_t">
+            <en>Above 1.00 the cab is held firmer, below it gives way further.</en>
+            <de>Über 1,00 wird die Kabine straffer gehalten, darunter gibt sie weiter nach.</de>
+            <fr>Au-dessus de 1,00, la cabine est tenue plus fermement ; en dessous, elle cède davantage.</fr>
+        </text>
+        <text name="fg_ui_kabineDaempfung">
+            <en>Cab damping</en>
+            <de>Dämpfung der Kabine</de>
+            <fr>Amortissement de la cabine</fr>
+        </text>
+        <text name="fg_ui_kabineDaempfung_t">
+            <en>Above 1.00 the cab swallows a jolt faster, below it rocks on for longer.</en>
+            <de>Über 1,00 schluckt die Kabine einen Stoß schneller weg, darunter wippt sie länger nach.</de>
+            <fr>Au-dessus de 1,00, la cabine absorbe le choc plus vite ; en dessous, elle balance plus longtemps.</fr>
+        </text>
+
+        <text name="fg_sec_pedale">
+            <en>Accelerator and brake</en>
+            <de>Gas und Bremse</de>
+            <fr>Accélérateur et frein</fr>
+        </text>
+        <text name="fg_sec_eigen_pedale">
+            <en>Mine: accelerator and brake</en>
+            <de>Meine: Gas und Bremse</de>
+            <fr>Les miens : accélérateur et frein</fr>
+        </text>
+        <text name="fg_ui_pedal">
+            <en>Pedal response</en>
+            <de>Pedalverlauf</de>
+            <fr>Réponse des pédales</fr>
+        </text>
+        <text name="fg_ui_pedal_t">
+            <en>Below 1.00 accelerator and brake build up and fall off more slowly, so the machine feels heavier.</en>
+            <de>Unter 1,00 bauen sich Gas und Bremse langsamer auf und ab, die Maschine wirkt schwerer.</de>
+            <fr>En dessous de 1,00, l'accélérateur et le frein montent et retombent plus lentement, la machine paraît plus lourde.</fr>
+        </text>
+
+        <text name="fg_ui_debug">
+            <en>Write details to the log</en>
+            <de>Einzelheiten ins Log schreiben</de>
+            <fr>Écrire les détails dans le journal</fr>
+        </text>
+        <text name="fg_ui_debug_t">
+            <en>Logs how many wheels were set on every change.</en>
+            <de>Schreibt bei jedem neuen Wert mit, wie viele Räder gesetzt wurden.</de>
+            <fr>Note à chaque modification combien de roues ont été réglées.</fr>
+        </text>
+
+        <text name="fg_opt_aus">
+            <en>Off</en>
+            <de>Aus</de>
+            <fr>Désactivé</fr>
+        </text>
+        <text name="fg_opt_an">
+            <en>On</en>
+            <de>An</de>
+            <fr>Activé</fr>
+        </text>
+        <text name="fg_opt_serienwert">
+            <en>(stock)</en>
+            <de>(Serie)</de>
+            <fr>(origine)</fr>
+        </text>
+
+        <text name="fg_help_category">
+            <en>Driving Feel</en>
+            <de>Fahr-Gefühl</de>
+            <fr>Sensation De Conduite</fr>
+        </text>
+        <text name="fg_help_pageTitle">
+            <en>Adjusting the driving behaviour</en>
+            <de>Fahrverhalten einstellen</de>
+            <fr>Régler le comportement routier</fr>
+        </text>
+        <text name="fg_help_intro">
+            <en>Every value is a factor on what the vehicle already brings along. 1.00 means stock. The settings apply to every vehicle, including the ones from the base game.</en>
+            <de>Jeder Wert ist ein Faktor auf das, was das Fahrzeug selbst mitbringt. 1,00 bedeutet Serie. Die Einstellungen gelten für jedes Fahrzeug, auch für die des Basisspiels.</de>
+            <fr>Chaque valeur est un facteur appliqué à ce que le véhicule possède déjà. 1,00 correspond à l'origine. Les réglages valent pour tous les véhicules, y compris ceux du jeu de base.</fr>
+        </text>
+        <text name="fg_help_reglerTitle">
+            <en>Where to find it</en>
+            <de>Wo es steht</de>
+            <fr>Où le trouver</fr>
+        </text>
+        <text name="fg_help_regler">
+            <en>ESC - General Settings - Driving Feel. A value takes effect at once, including on vehicles already standing out in the world. In multiplayer the upper sliders are the server default and only an admin sets them; under them everyone has their own, which apply to the vehicles that player is sitting in.</en>
+            <de>ESC - Allgemeine Einstellungen - Fahr-Gefühl. Ein Wert wirkt sofort, auch auf Fahrzeuge, die schon draußen stehen. Im Mehrspieler sind die oberen Regler die Server-Vorgabe, die nur ein Admin setzt; darunter hat jeder seine eigenen, die für die Fahrzeuge gelten, in denen er selbst sitzt.</de>
+            <fr>ÉCHAP - Réglages généraux - Sensation De Conduite. Une valeur agit aussitôt, y compris sur les véhicules déjà présents. En multijoueur, les curseurs du haut sont le réglage du serveur, que seul un administrateur modifie ; en dessous, chacun a les siens, valables pour les véhicules qu'il conduit.</fr>
+        </text>
+        <text name="fg_help_lastTitle">
+            <en>Empty and loaded</en>
+            <de>Leer und beladen</de>
+            <fr>À vide et chargé</fr>
+        </text>
+        <text name="fg_help_last">
+            <en>The suspension has two values, one for empty and one for fully loaded. In between they are mixed by the load each wheel actually carries, measured against the load the tyre was built for. A real spring is designed for its rated load and is therefore too firm when empty, so an empty value below 1.00 together with a loaded value above it comes close to the real thing. Cab and seat have their own three values, set to calm things down out of the box. The pedals are at stock with 1.00. In the True to life preset the suspension is worked out rather than guessed: 0.60 brings the vehicles' ride frequency from 3.15 down to 2.44 Hz, which matches a suspended tractor front axle. The loaded value is twice as high so the frequency stays put at double the load, and damping follows with the square root so the character is kept.</en>
+            <de>Die Federung hat zwei Werte, einen für leer und einen für voll beladen. Dazwischen wird nach der Last gemischt, die jedes Rad gerade trägt, gemessen an der Last, für die der Reifen gebaut ist. Eine echte Feder ist für ihre Nennlast ausgelegt und leer deshalb zu hart - ein Leerwert unter 1,00 und ein Vollwert darüber kommen dem nahe. Kabine und Sitz haben eigene drei Werte, die ab Werk auf Beruhigung stehen. Die Pedale stehen mit 1,00 auf Serie. Bei der Voreinstellung Realistisch ist die Federung gerechnet statt geschätzt: 0,60 bringt die Eigenfrequenz der Fahrzeuge von 3,15 auf 2,44 Hz, was einer gefederten Traktor-Vorderachse entspricht. Der Vollwert ist doppelt so hoch, damit die Frequenz bei doppelter Last gleich bleibt, und die Dämpfung folgt jeweils mit der Wurzel, damit die Charakteristik erhalten bleibt.</de>
+            <fr>La suspension a deux valeurs, une à vide et une en charge complète. Entre les deux, elles sont mélangées selon la charge que porte réellement chaque roue, rapportée à la charge pour laquelle le pneu a été conçu. Un ressort réel est dimensionné pour sa charge nominale et reste donc trop ferme à vide : une valeur à vide sous 1,00 et une valeur en charge au-dessus s'en approchent. La cabine et le siège ont leurs trois propres valeurs, réglées d'origine pour calmer l'image. Les pédales sont à l'origine avec 1,00. Dans le préréglage Réaliste, la suspension est calculée et non estimée : 0,60 ramène la fréquence propre des véhicules de 3,15 à 2,44 Hz, ce qui correspond à un essieu avant suspendu de tracteur. La valeur en charge est double pour que la fréquence reste la même au double de la charge, et l'amortissement suit par la racine carrée afin de conserver le caractère.</fr>
+        </text>
+
+        <text name="fg_help_kabineTitle">
+            <en>When the view shakes</en>
+            <de>Wenn das Bild wackelt</de>
+            <fr>Quand l'image tremble</fr>
+        </text>
+        <text name="fg_help_kabine">
+            <en>With the game's camera suspension switched on, the view in the cab hangs on the cab suspension and copies every movement - but only on vehicles whose builder set that up, which is why one tractor shakes and the next does not. In multiplayer it shows more, because there the suspension is driven by the steps in the position updates rather than by the road. That is why cab, seat and driver are held firmer than stock out of the box: more spring rate, more damping, shorter travel. Anyone who wants more movement instead turns the first two below 1.00 and the travel above it.</en>
+            <de>Steht die Kamerafederung des Spiels an, hängt das Bild in der Kabine an der Kabinenfederung und macht jede Bewegung mit - allerdings nur bei Fahrzeugen, deren Erbauer das so eingetragen hat, weshalb der eine Traktor wackelt und der nächste nicht. Im Mehrspieler fällt es stärker auf, weil die Federung dort von den Stufen der Positionsübertragung angeregt wird und nicht von der Fahrbahn. Darum werden Kabine, Sitz und Fahrer ab Werk straffer gehalten als Serie: mehr Federhärte, mehr Dämpfung, kürzerer Weg. Wer stattdessen mehr Bewegung will, stellt die ersten beiden unter 1,00 und den Weg darüber.</de>
+            <fr>Si la suspension de caméra du jeu est activée, l'image dans la cabine est accrochée à la suspension de cabine et suit chaque mouvement - mais seulement sur les véhicules dont le créateur l'a prévu, d'où le fait qu'un tracteur tremble et pas le suivant. En multijoueur, cela se remarque davantage, car la suspension y est excitée par les paliers de la transmission de position et non par la route. C'est pourquoi la cabine, le siège et le conducteur sont tenus plus fermement qu'à l'origine : plus de raideur, plus d'amortissement, moins de course. Qui veut au contraire plus de mouvement place les deux premières sous 1,00 et la course au-dessus.</fr>
+        </text>
+
+        <text name="fg_help_mpTitle">
+            <en>In multiplayer</en>
+            <de>Im Mehrspieler</de>
+            <fr>En multijoueur</fr>
+        </text>
+        <text name="fg_help_mp">
+            <en>Wheel physics runs on the server alone. A client only receives a capped and smoothed wheel speed and therefore hardly sees a wheel spin. With wheel slip switched on, the server sends the slip it works out itself, and dust, dirt and the wheels look like they do in single player. The mod has to be on the server and with every player for that.</en>
+            <de>Die Radphysik rechnet allein der Server. Ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet und sieht deshalb kaum, wenn ein Rad durchdreht. Mit eingeschaltetem Radschlupf schickt der Server den Schlupf nach, den er selbst ausrechnet, und Staub, Dreck und Radbild sehen wieder aus wie im Einzelspieler. Dazu muss die Mod auf dem Server und bei jedem Mitspieler liegen.</de>
+            <fr>La physique des roues tourne uniquement sur le serveur. Un client ne reçoit qu'une vitesse de roue plafonnée et lissée et voit donc à peine une roue patiner. Avec le patinage activé, le serveur transmet la valeur qu'il calcule lui-même, et la poussière, la boue et les roues retrouvent l'aspect du solo. Pour cela, le mod doit être présent sur le serveur et chez chaque joueur.</fr>
+        </text>
+
+        <text name="fg_help_tippsTitle">
+            <en>A good starting point</en>
+            <de>Ein guter Anfang</de>
+            <fr>Un bon point de départ</fr>
+        </text>
+        <text name="fg_help_tipps">
+            <en>Start with the Gentle preset and drive a stretch you know well. If you want more, go to Noticeable or True to life, or set a single slider and drive the same stretch again. Cornering grip and spring rate are what you feel first. Leave the trailer values at 1.00 until the tractors suit you.</en>
+            <de>Mit der Voreinstellung Sanft anfangen und eine Strecke fahren, die man kennt. Wer mehr will, geht auf Deutlich oder Realistisch oder stellt einen einzelnen Regler und fährt dieselbe Strecke noch einmal. Am ehesten merkt man Seitenführung und Federhärte. Die Werte für Anhänger auf 1,00 lassen, bis die Zugfahrzeuge passen.</de>
+            <fr>Commencez par le préréglage Léger et roulez sur un trajet que vous connaissez. Pour aller plus loin, passez à Marqué ou Réaliste, ou réglez un seul curseur et refaites le même trajet. C'est l'adhérence latérale et la raideur que l'on sent le plus vite. Laissez les valeurs des remorques à 1,00 tant que les tracteurs ne vous conviennent pas.</fr>
+        </text>
+    </l10n>
+
+    <helpLines>
+        <category title="$l10n_fg_help_category">
+            <page id="fahrGefuehlHelp" title="$l10n_fg_help_pageTitle" iconSliceId="firstSteps_startingEquipment">
+                <paragraph>
+                    <text text="$l10n_fg_help_intro"/>
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_fg_help_reglerTitle"/>
+                    <text text="$l10n_fg_help_regler"/>
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_fg_help_tippsTitle"/>
+                    <text text="$l10n_fg_help_tipps"/>
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_fg_help_lastTitle"/>
+                    <text text="$l10n_fg_help_last"/>
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_fg_help_kabineTitle"/>
+                    <text text="$l10n_fg_help_kabine"/>
+                </paragraph>
+                <paragraph>
+                    <title text="$l10n_fg_help_mpTitle"/>
+                    <text text="$l10n_fg_help_mp"/>
+                </paragraph>
+            </page>
+        </category>
+    </helpLines>
+</modDesc>
