@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="115" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>OGW</author>
-    <version>1.3.0.0</version>
+    <version>1.3.1.0</version>
 
     <title>
         <en>Driving Feel</en>
@@ -22,7 +22,7 @@ You will find all of it under ESC - General Settings - Driving Feel. A value tak
 
 Since 1.2.0.0 the load counts: spring rate and damping each have a value for empty and one for fully loaded, and in between they are mixed by the load every wheel actually carries. A spring is built for its rated load and is therefore too firm when empty - that is exactly what this reproduces. Cab, seat and driver are held firmer out of the box so the view in the cab stands calmer, and accelerator and brake can be made lazier so a heavy machine feels like one.
 
-There is one more thing for multiplayer. Wheel physics runs on the server alone, and a client only ever receives a capped and smoothed wheel speed, so spinning wheels barely show. The mod sends the slip along from the server, so dust, dirt and the wheels themselves look like they do in single player. The switch sits under Multiplayer and is hidden in single player.
+There is one more thing for multiplayer. Wheel physics runs on the server alone, and a client only ever receives a capped and smoothed wheel speed, so spinning wheels barely show. The mod sends the slip along from the server, so dust, dirt and the wheels themselves look like they do in single player. The switch sits under Multiplayer and is hidden in single player. It is off out of the box: that part is still beta, and feedback is welcome.
 
 Console: fgStatus, fgSet, fgReload
 
@@ -39,7 +39,7 @@ Zu finden ist alles unter ESC - Allgemeine Einstellungen - Fahr-Gefühl. Ein Wer
 
 Seit 1.2.0.0 zählt die Last mit: Federhärte und Dämpfung haben je einen Wert für leer und einen für voll beladen, dazwischen wird nach der Last gemischt, die jedes Rad gerade trägt. Eine Feder ist für ihre Nennlast gebaut und leer deshalb zu hart - genau das lässt sich damit nachstellen. Kabine, Sitz und Fahrerfigur werden ab Werk straffer gehalten, damit das Bild in der Innenansicht ruhiger steht, und Gas und Bremse lassen sich träger stellen, damit eine schwere Maschine sich auch so anfühlt.
 
-Für den Mehrspieler kommt noch eine Sache dazu. Dort rechnet die Radphysik allein der Server, ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet - durchdrehende Räder fallen deshalb kaum auf. Die Mod schickt den Schlupf vom Server nach, damit Staub, Dreck und Radbild wieder so aussehen wie im Einzelspieler. Der Schalter steht unter Mehrspieler und ist im Einzelspieler ausgeblendet.
+Für den Mehrspieler kommt noch eine Sache dazu. Dort rechnet die Radphysik allein der Server, ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet - durchdrehende Räder fallen deshalb kaum auf. Die Mod schickt den Schlupf vom Server nach, damit Staub, Dreck und Radbild wieder so aussehen wie im Einzelspieler. Der Schalter steht unter Mehrspieler und ist im Einzelspieler ausgeblendet. Ab Werk steht er aus: dieser Teil ist noch Beta, Rückmeldungen sind willkommen.
 
 Konsole: fgStatus, fgSet, fgReload
 
@@ -56,7 +56,7 @@ Tout se trouve sous ÉCHAP - Réglages généraux - Sensation De Conduite. Une v
 
 Depuis la 1.2.0.0, la charge compte : la raideur et l'amortissement ont chacun une valeur à vide et une en charge complète, mélangées selon la charge que porte réellement chaque roue. Un ressort est conçu pour sa charge nominale et reste donc trop ferme à vide - c'est exactement ce que cela reproduit. La cabine, le siège et le conducteur sont tenus plus fermement d'origine pour que l'image dans la cabine reste plus calme, et l'accélérateur et le frein peuvent être rendus plus lents pour qu'une machine lourde en ait l'air.
 
-Une chose de plus pour le multijoueur. La physique des roues tourne uniquement sur le serveur et un client ne reçoit qu'une vitesse de roue plafonnée et lissée - le patinage se remarque donc à peine. Le mod transmet le patinage depuis le serveur, pour que la poussière, la boue et les roues retrouvent l'aspect du solo. L'interrupteur se trouve sous Multijoueur et reste masqué en solo.
+Une chose de plus pour le multijoueur. La physique des roues tourne uniquement sur le serveur et un client ne reçoit qu'une vitesse de roue plafonnée et lissée - le patinage se remarque donc à peine. Le mod transmet le patinage depuis le serveur, pour que la poussière, la boue et les roues retrouvent l'aspect du solo. L'interrupteur se trouve sous Multijoueur et reste masqué en solo. Il est désactivé d'origine : cette partie est encore en bêta, et les retours sont bienvenus.
 
 Console : fgStatus, fgSet, fgReload
 
@@ -150,14 +150,14 @@ Mod de script, donc PC et Mac uniquement.]]></fr>
             <fr>Multijoueur</fr>
         </text>
         <text name="fg_ui_mpSchlupf">
-            <en>Send wheel slip</en>
-            <de>Radschlupf übertragen</de>
-            <fr>Transmettre le patinage</fr>
+            <en>Send wheel slip (beta)</en>
+            <de>Radschlupf übertragen (Beta)</de>
+            <fr>Transmettre le patinage (bêta)</fr>
         </text>
         <text name="fg_ui_mpSchlupf_t">
-            <en>Without it, other players barely see the wheels spin. The server sends a few values per second for it.</en>
-            <de>Ohne das sehen Mitspieler kaum, wenn Räder durchdrehen. Der Server schickt dafür ein paar Werte je Sekunde.</de>
-            <fr>Sans cela, les autres joueurs voient à peine les roues patiner. Le serveur envoie quelques valeurs par seconde.</fr>
+            <en>Without it, other players barely see the wheels spin. The server sends a few values per second for it. Off out of the box, because a round with several players is still missing - switch it on if you want to try it and tell me how it went.</en>
+            <de>Ohne das sehen Mitspieler kaum, wenn Räder durchdrehen. Der Server schickt dafür ein paar Werte je Sekunde. Ab Werk aus, weil die Runde mit mehreren Spielern noch fehlt - wer mag, schaltet es ein und berichtet, wie es gelaufen ist.</de>
+            <fr>Sans cela, les autres joueurs voient à peine les roues patiner. Le serveur envoie quelques valeurs par seconde. Désactivé d'origine, faute d'une partie à plusieurs - activez-le si vous voulez l'essayer et dites-moi ce que cela donne.</fr>
         </text>
 
         <text name="fg_sec_meldungen">
@@ -470,9 +470,9 @@ Mod de script, donc PC et Mac uniquement.]]></fr>
             <fr>En multijoueur</fr>
         </text>
         <text name="fg_help_mp">
-            <en>Wheel physics runs on the server alone. A client only receives a capped and smoothed wheel speed and therefore hardly sees a wheel spin. With wheel slip switched on, the server sends the slip it works out itself, and dust, dirt and the wheels look like they do in single player. The mod has to be on the server and with every player for that.</en>
-            <de>Die Radphysik rechnet allein der Server. Ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet und sieht deshalb kaum, wenn ein Rad durchdreht. Mit eingeschaltetem Radschlupf schickt der Server den Schlupf nach, den er selbst ausrechnet, und Staub, Dreck und Radbild sehen wieder aus wie im Einzelspieler. Dazu muss die Mod auf dem Server und bei jedem Mitspieler liegen.</de>
-            <fr>La physique des roues tourne uniquement sur le serveur. Un client ne reçoit qu'une vitesse de roue plafonnée et lissée et voit donc à peine une roue patiner. Avec le patinage activé, le serveur transmet la valeur qu'il calcule lui-même, et la poussière, la boue et les roues retrouvent l'aspect du solo. Pour cela, le mod doit être présent sur le serveur et chez chaque joueur.</fr>
+            <en>Wheel physics runs on the server alone. A client only receives a capped and smoothed wheel speed and therefore hardly sees a wheel spin. With wheel slip switched on, the server sends the slip it works out itself, and dust, dirt and the wheels look like they do in single player. The mod has to be on the server and with every player for that. The switch is off out of the box: this part has not been through a round with several players yet, so treat it as beta and report what you see.</en>
+            <de>Die Radphysik rechnet allein der Server. Ein Client bekommt die Raddrehzahl nur gedeckelt und geglättet und sieht deshalb kaum, wenn ein Rad durchdreht. Mit eingeschaltetem Radschlupf schickt der Server den Schlupf nach, den er selbst ausrechnet, und Staub, Dreck und Radbild sehen wieder aus wie im Einzelspieler. Dazu muss die Mod auf dem Server und bei jedem Mitspieler liegen. Der Schalter steht ab Werk aus: eine Runde mit mehreren Spielern hat der Teil noch nicht hinter sich, er ist also Beta - Rückmeldungen gern.</de>
+            <fr>La physique des roues tourne uniquement sur le serveur. Un client ne reçoit qu'une vitesse de roue plafonnée et lissée et voit donc à peine une roue patiner. Avec le patinage activé, le serveur transmet la valeur qu'il calcule lui-même, et la poussière, la boue et les roues retrouvent l'aspect du solo. Pour cela, le mod doit être présent sur le serveur et chez chaque joueur. L'interrupteur est désactivé d'origine : cette partie n'a pas encore vécu une partie à plusieurs, elle est donc en bêta - vos retours sont bienvenus.</fr>
         </text>
 
         <text name="fg_help_tippsTitle">

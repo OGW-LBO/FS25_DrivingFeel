@@ -66,7 +66,8 @@ FahrGefuehl.CFG = {
 
     pedal      = 0.85,
 
-    mpSchlupf  = true,
+    -- Aus ab Werk: der Test mit mehreren Spielern fehlt noch.
+    mpSchlupf  = false,
 
     debug      = false,
 }
